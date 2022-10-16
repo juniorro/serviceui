@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -12,7 +14,8 @@ body {
 
 nav {
     display: flex;
-    flex-direction: row; /* Default */
+    flex-direction: row;
+    /* Default */
     justify-content: space-between;
     background-color: #1B2064;
     /* max-width: 800px; */
@@ -44,7 +47,8 @@ nav {
 
 .middle-section ul {
     display: flex;
-    flex-direction: row; /* Default */
+    flex-direction: row;
+    /* Default */
     justify-content: start;
     align-items: center;
 }
@@ -56,7 +60,8 @@ nav {
     border-radius: 3px;
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
     /* text-decoration: underline; */
     background-color: green;
     transition: .5s;
@@ -64,7 +69,8 @@ a.active, a:hover {
 
 .right-section {
     display: flex;
-    flex-direction: row; /* Default */
+    flex-direction: row;
+    /* Default */
     align-items: center;
     justify-content: space-between;
     /* background-color: lightblue; */
@@ -86,7 +92,8 @@ a.active, a:hover {
 
 .profile-section {
     display: flex;
-    flex-direction: row; /* Default */
+    flex-direction: row;
+    /* Default */
     align-items: center;
     justify-content: space-between;
     border-width: 1px;
@@ -123,4 +130,132 @@ a.active, a:hover {
     height: 40px;
     border-radius: 20px;
     margin-right: 8px;
+}
+
+.container {
+    margin-top: 25px;
+    margin-right: 200px;
+    margin-left: 200px;
+    overflow: auto;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 25px;
+}
+
+.account {
+    background-color: lightblue;
+    border-radius: 3px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column; /* Default */
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting-bottom {
+    display: flex;
+    flex-direction: row; /* Default */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member-subtitle {
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+}
+
+.statistics {
+    background-color: pink;
+    border-radius: 3px;
+}
+
+.greeting {
+    font-size: 17px;
+    margin-top: 7px;
+    color: #591c84;
+    font-weight: 500;
+}
+
+.member-id {
+    font-size: 25px;
+    margin-top: 7px;
+    color: #591c84;
+    margin-top: 25px;
+}
+
+.account-info small {
+    font-size: 15px;
+    margin-top: 2px;
+    color: #555255;
+    margin-bottom: 25px;
+}
+
+.greeting-bottom {
+    padding: 20px;
+}
+
+.profile-button {
+    height: 35px;
+    padding: 7px 5px;
+    color: white;
+    background-color: green;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/* TABLE STYLES */
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+table thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+}
+table th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+table td {
+    padding: 1rem 2rem;
+}
+table a {
+    text-decoration: none;
+    color: #2962ff;
+}
+table .status {
+    border-radius: 0.2rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    text-align: center;
+}
+table .status-pending {
+    background-color: #fff0c2;
+    color: #a68b00;
+}
+table .status-paid {
+    background-color: #c8e6c9;
+    color: #388e3c;
+}
+table .status-unpaid {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+table .amount {
+    text-align: center;
+}
+table tr:nth-child(even) {
+    background-color: #f4f6fb;
 }
