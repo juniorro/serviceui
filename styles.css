@@ -52,7 +52,7 @@ nav .nav-wrapper {
 .middle-section ul a {
     margin-right: 16px;
     color: white;
-    padding: 5px 10px;
+    padding: 3px 8px;
     border-radius: 3px;
 }
 
@@ -82,16 +82,16 @@ nav .nav-wrapper {
 }
 
 .service-button {
-    height: 30px;
+    height: 40px;
     /* width: 95px; */
-    background-color: green;
-    color: white;
+    background-color: rgb(226, 182, 8);
+    color: #9b0e92;
     font-weight: bold;
     cursor: pointer;
     border-width: 1px;
     border-style: solid;
     border-color: gray;
-    font-size: 11px;
+    font-size: 13px;
     padding: 0px 5px;
     text-align: center;
     text-decoration: none;
@@ -127,7 +127,7 @@ nav .nav-wrapper {
     margin-top: 25px;
     margin-right: 200px;
     margin-left: 200px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .header-grid {
@@ -150,6 +150,7 @@ nav .nav-wrapper {
 
 .greeting-bottom {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row; /* Default */
     justify-content: space-between;
     align-items: center;
@@ -193,12 +194,14 @@ nav .nav-wrapper {
 
 .profile-button {
     height: 35px;
+    /* width: 30%; */
     padding: 7px 5px;
     color: white;
     background-color: green;
     border-radius: 3px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* TABLE STYLES */
