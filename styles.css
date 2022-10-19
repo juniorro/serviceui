@@ -134,6 +134,7 @@ nav .nav-wrapper {
     display: grid;
     grid-template-columns: 4fr 8fr;
     column-gap: 25px;
+    row-gap: 20px;
 }
 
 .account {
@@ -202,6 +203,48 @@ nav .nav-wrapper {
     border: none;
     cursor: pointer;
     font-weight: bold;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 240px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 15px 25px;
+    border-radius: 3px;
+    min-width: 163px;
+    min-height: 168px;
+}
+
+.card i {
+    color: rgb(229, 218, 7);
+    margin-bottom: 10px;
+    font-size: 25px
+}
+
+.card p {
+    color: #ddda0e;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card button {
+    color: #e9de0f;
+    background-color: #b81dcc;
+    font-size: 12px;
+    width: 85px;
+    height: 25px;
+    padding-bottom: 20px;
 }
 
 /* TABLE STYLES */
@@ -284,4 +327,11 @@ table tr:nth-child(even) {
   .pagination a:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+
+  @media screen and (max-width: 1274px) {
+    .header-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+     }
   }
