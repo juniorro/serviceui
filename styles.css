@@ -164,7 +164,7 @@ nav .nav-wrapper {
 }
 
 .statistics {
-    background-color: pink;
+    background-color: #ffc0cb;
     border-radius: 3px;
 }
 
@@ -218,7 +218,7 @@ nav .nav-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #c71eb9;
     padding: 15px 25px;
     border-radius: 3px;
     min-width: 163px;
@@ -226,9 +226,9 @@ nav .nav-wrapper {
 }
 
 .card i {
-    color: rgb(229, 218, 7);
+    color: #067f06;
     margin-bottom: 10px;
-    font-size: 25px
+    font-size: 30px
 }
 
 .card p {
@@ -329,7 +329,7 @@ table tr:nth-child(even) {
     border-bottom-right-radius: 5px;
   }
 
-  @media screen and (max-width: 1274px) {
+  @media screen and (max-width: 1448px) {
     .header-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
